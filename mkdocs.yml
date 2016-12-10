@@ -1,0 +1,35 @@
+site_name: Εισαγωγή στον προγραμματισμό
+
+copyright: 'License: <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>'
+
+theme: 'material'
+
+site_dir: 'site'
+docs_dir: 'docs'
+site_favicon: 'img/favicon.png'
+
+markdown_extensions:
+    - codehilite(css_class=code)
+    - toc:
+        permalink: '#'
+    - admonition
+extra:
+    logo: 'img/logo.png'
+    palette:
+        primary: 'blue grey'
+        accent: 'light blue'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+    i18n:
+        prev: 'Προηγούμενο'
+        next: 'Επόμενο'
+    author:
+        github: 'ApollonGT'
+        twitter: 'Gkratsia'
+
+pages:
+    - 'Αρχική σελίδα': 'index.md'
+    - 'Εισαγωγή': 'introduction.md'
+    - 'Κεφάλαιο 1': 'chapter_1.md'
+    - 'Credits' : 'credits.md'
