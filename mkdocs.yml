@@ -4,8 +4,8 @@ copyright: 'License: <a rel="license" target="_blank" href="http://creativecommo
 
 theme: 'material'
 
-site_dir: 'site'
-docs_dir: 'docs'
+site_dir: 'docs'
+docs_dir: 'md_src'
 site_favicon: 'img/favicon.png'
 extra_css: ['css/style.css']
 
