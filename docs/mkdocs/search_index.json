@@ -1,0 +1,44 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03bf\u03bd \u03c0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03bc\u03cc\n#\n\n\n\n\n\n\n\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03b9\u03c2 \u03b2\u03b1\u03c3\u03b9\u03ba\u03ad\u03c2 \u03ad\u03bd\u03bd\u03bf\u03b9\u03b5\u03c2 \u03c4\u03bf\u03c5 \u03c0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03bc\u03bf\u03cd \u03bc\u03b5 \u03c4\u03b7 \u03c7\u03c1\u03ae\u03c3\u03b7 \u03c4\u03b7\u03c2 \nPython\n.\n\n\n\n\n\u0388\u03bd\u03b1\u03c1\u03be\u03b7", 
+            "title": "\u0391\u03c1\u03c7\u03b9\u03ba\u03ae \u03c3\u03b5\u03bb\u03af\u03b4\u03b1"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03b9\u03c2 \u03b2\u03b1\u03c3\u03b9\u03ba\u03ad\u03c2 \u03ad\u03bd\u03bd\u03bf\u03b9\u03b5\u03c2 \u03c4\u03bf\u03c5 \u03c0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03bc\u03bf\u03cd \u03bc\u03b5 \u03c4\u03b7 \u03c7\u03c1\u03ae\u03c3\u03b7 \u03c4\u03b7\u03c2  Python .   \u0388\u03bd\u03b1\u03c1\u03be\u03b7", 
+            "title": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03bf\u03bd \u03c0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03bc\u03cc"
+        }, 
+        {
+            "location": "/introduction/", 
+            "text": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae\n#", 
+            "title": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae"
+        }, 
+        {
+            "location": "/introduction/#_1", 
+            "text": "", 
+            "title": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae"
+        }, 
+        {
+            "location": "/chapter_1/", 
+            "text": "\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf 1: \u0395\u03c1\u03b3\u03b1\u03bb\u03b5\u03af\u03b1\n#", 
+            "title": "\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf 1"
+        }, 
+        {
+            "location": "/chapter_1/#1", 
+            "text": "", 
+            "title": "\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf 1: \u0395\u03c1\u03b3\u03b1\u03bb\u03b5\u03af\u03b1"
+        }, 
+        {
+            "location": "/credits/", 
+            "text": "Credits\n#\n\n\nIcons: \nVecteezy", 
+            "title": "Credits"
+        }, 
+        {
+            "location": "/credits/#credits", 
+            "text": "Icons:  Vecteezy", 
+            "title": "Credits"
+        }
+    ]
+}
