@@ -9,12 +9,15 @@ docs_dir: 'md_src'
 site_favicon: 'img/favicon.png'
 extra_css: ['css/style.css']
 
+extra_javascript:
+    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 markdown_extensions:
     - attr_list
     - codehilite(css_class=code)
     - toc:
         permalink: '#'
     - admonition
+    - mdx_math
 extra:
     logo: 'img/logo.png'
     palette:
