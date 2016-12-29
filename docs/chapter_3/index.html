@@ -309,6 +309,47 @@
 </li>
 </ul>
 <h2 id="31">3.1 Μεταβλητές<a class="headerlink" href="#31" title="Permanent link">#</a></h2>
+<p>Με τον όρο <em>μεταβλητή</em> εννοούμε μια ποσότητα που δεν έχει απαραίτητα μια σταθερή τιμή. Η τιμή της δηλαδή μπορεί να αλλάζει. </p>
+<p>Φανταστείτε ότι κάπου στη μνήμη του υπολογιστή σας υπάρχουν κάποια συρτάρια με κάποιες ετικέτες πάνω. Για παράδειγμα το συρτάρι <code>a</code>, το συρτάρι <code>b</code> και το συρτάρι <code>sum</code>.
+Το κάθε συρτάρι έχει μέσα του μια τιμή. Μπορεί να είναι ένας ακέραιος αριθμός (1, 2, ...) ή ένας δεκαδικός αριθμός (1.2, 2.34, 3.45, ...) ή ακόμα και ένα κείμενο ("one", "test", ...). Μπορούμε να πάρουμε την τιμή από το συρτάρι ή και να ορίσουμε εμείς μια τιμή σε αυτό. Το συρτάρι αυτό ονομάζεται <strong>μεταβλητή</strong> ενώ το τι περιέχει μέσα είναι η <strong>τιμή της μεταβλητής</strong>.</p>
+<p>Για να δούμε ένα παράδειγμα μεταβλητών στην Python:</p>
+<div class="code"><pre><span></span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Ας δούμε μια πιο ολοκληρωμένη εφαρμογή της μέχρι τώρα γνώσης μας. Θα φτιάξουμε ένα απλό πρόγραμμα που θα μας βοηθήσει στο μάθημα των μαθηματικών. Στα μαθηματικά συναντήσαμε τις εξισώσεις πρώτου βαθμού οι οποίες είναι της μορφής <script type="math/tex">\alpha \cdot x + \beta = 0</script> με <script type="math/tex">\alpha \neq 0</script>. Ξέρουμε ότι για να τις λύσουμε αυτές ακολουθούμε τα εξής βήματα:</p>
+<p>
+<script type="math/tex; mode=display">
+\alpha \cdot x = - \beta \\
+x = - \frac{\beta}{\alpha}
+</script>
+</p>
+<p>Άρα θα μπορούσαμε να γράψουμε το ακόλουθο πρόγραμμα:</p>
+<div class="code"><pre><span></span><span class="c1"># 2x - 6 = 0</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>
+<span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">beta</span> <span class="o">/</span> <span class="n">alpha</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;x = &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Προφανώς για κάθε εξίσωση που μας δίνεται να λύσουμε, μπορούμε να αντικαταστήσουμε τις τιμές των <code>alpha</code> και <code>beta</code> και να πάρουμε την λύση της εξίσωσής μας.</p>
+<p><em>Σημείωση:</em></p>
+<p>Στα μαθηματικά έχουμε την έννοια του ποσοστού. Για παράδειγμα αν έχουμε έναν αριθμό <code>x</code> και θέλουμε να βρούμε το <code>a%</code> του <code>x</code> κάνουμε:
+<script type="math/tex; mode=display">
+y = \frac{a}{100}\cdot x
+</script>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Άσκηση: Γράψτε ένα πρόγραμμα που να βρίσκει την τιμή των παιχνιδιών μετά την έκπτωση αν ξέρετε πόσο έκανε πριν την έκπτωση.</p>
+</div>
 <h2 id="32">3.2 Δομές ελέγχου ροής<a class="headerlink" href="#32" title="Permanent link">#</a></h2>
 <h2 id="33">3.3 Δομές επανάληψης<a class="headerlink" href="#33" title="Permanent link">#</a></h2>
 <h2 id="34">3.4 Συναρτήσεις<a class="headerlink" href="#34" title="Permanent link">#</a></h2>
@@ -386,6 +427,8 @@
       var repo_id  = '';
     </script>
     <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     
   </body>
