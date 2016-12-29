@@ -33,5 +33,7 @@ extra:
 pages:
     - 'Αρχική σελίδα': 'index.md'
     - 'Εισαγωγή': 'introduction.md'
-    - 'Κεφάλαιο 1': 'chapter_1.md'
+    - '1. Εργαλεία': 'chapter_1.md'
+    - '2. Γλώσσες προγραμματισμού': 'chapter_2.md'
+    - '3. Βασικές αρχές': 'chapter_3.md'
     - 'Credits' : 'credits.md'
