@@ -210,24 +210,6 @@
               </a>
             </li>
           
-            <li class="anchor">
-              <a title="3.2 Δομές ελέγχου ροής" href="#32">
-                3.2 Δομές ελέγχου ροής
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="3.3 Δομές επανάληψης" href="#33">
-                3.3 Δομές επανάληψης
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="3.4 Συναρτήσεις" href="#34">
-                3.4 Συναρτήσεις
-              </a>
-            </li>
-          
         </ul>
       
     
@@ -308,7 +290,11 @@
 <p><em>Συναρτήσεις</em>: Οι συναρτήσεις είναι ένα σύνολο διαδικασιών / εντολών, πακεταρισμένο σε μια οντότητα η οποία μπορεί να κληθεί πολλές φορές. Λεπτομέρειες θα δούμε παρακάτω.</p>
 </li>
 </ul>
+<div class="admonition node">
+<p class="admonition-title">Σημείωση: Οι βασικές πράξεις στην Python είναι: Πρόσθεση (+), Αφαίρεση (-), Πολλαπλασιασμός (*), Διαίρεση (/)</p>
+</div>
 <h2 id="31">3.1 Μεταβλητές<a class="headerlink" href="#31" title="Permanent link">#</a></h2>
+<h3 id="_1">Απλές μεταβλητές<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
 <p>Με τον όρο <em>μεταβλητή</em> εννοούμε μια ποσότητα που δεν έχει απαραίτητα μια σταθερή τιμή. Η τιμή της δηλαδή μπορεί να αλλάζει. </p>
 <p>Φανταστείτε ότι κάπου στη μνήμη του υπολογιστή σας υπάρχουν κάποια συρτάρια με κάποιες ετικέτες πάνω. Για παράδειγμα το συρτάρι <code>a</code>, το συρτάρι <code>b</code> και το συρτάρι <code>sum</code>.
 Το κάθε συρτάρι έχει μέσα του μια τιμή. Μπορεί να είναι ένας ακέραιος αριθμός (1, 2, ...) ή ένας δεκαδικός αριθμός (1.2, 2.34, 3.45, ...) ή ακόμα και ένα κείμενο ("one", "test", ...). Μπορούμε να πάρουμε την τιμή από το συρτάρι ή και να ορίσουμε εμείς μια τιμή σε αυτό. Το συρτάρι αυτό ονομάζεται <strong>μεταβλητή</strong> ενώ το τι περιέχει μέσα είναι η <strong>τιμή της μεταβλητής</strong>.</p>
@@ -348,11 +334,41 @@ y = \frac{a}{100}\cdot x
 </script>
 </p>
 <div class="admonition note">
-<p class="admonition-title">Άσκηση: Γράψτε ένα πρόγραμμα που να βρίσκει την τιμή των παιχνιδιών μετά την έκπτωση αν ξέρετε πόσο έκανε πριν την έκπτωση.</p>
+<p class="admonition-title">Άσκηση: Σε ένα κατάστημα υπάρχουν γιορτινές προσφορές στα ηλεκτρονικά παιχνίδια και όλα τα παιχνίδια είναι 20% φθηνότερα. Γράψτε ένα πρόγραμμα που να βρίσκει την τιμή του κάθε παιχνιδιού μετά την έκπτωση αν ξέρετε πόσο έκανε πριν την έκπτωση.</p>
 </div>
-<h2 id="32">3.2 Δομές ελέγχου ροής<a class="headerlink" href="#32" title="Permanent link">#</a></h2>
-<h2 id="33">3.3 Δομές επανάληψης<a class="headerlink" href="#33" title="Permanent link">#</a></h2>
-<h2 id="34">3.4 Συναρτήσεις<a class="headerlink" href="#34" title="Permanent link">#</a></h2>
+<h3 id="_2">Άλλοι τύποι μεταβλητών<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<p>Εκτός από απλές μεταβλητές με αριθμητικές τιμές, μπορούμε να έχουμε και πιο σύνθετες μορφές. Ας δούμε τους πιο βασικούς τύπους μεταβλητών.</p>
+<h4 id="strings">Κείμενο (strings)<a class="headerlink" href="#strings" title="Permanent link">#</a></h4>
+<p>Σε μια μεταβλητή, εκτός από μια αριθμητική τιμή, μπορούμε να αποθηκεύσουμε και κείμενο. Οι μεταβλητές που περιέχουν κείμενο ονομάζονται strings. Είναι μια ειδική μορφή μεταβλητής γιατί στην πραγματικότητα αποτελούνται αποτελούνται από μια σειρά από χαρακτήρες. </p>
+<p>Για να δημιουργήσουμε τέτοιες μεταβλητές χρησιμοποιούμε τα μονά ή διπλά εισαγωγικά:</p>
+<div class="code"><pre><span></span><span class="n">end_message</span> <span class="o">=</span> <span class="s2">&quot;Game Over&quot;</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="s2">&quot;Press Start to continue...&quot;</span>
+</pre></div>
+
+
+<p>Για να δούμε την τιμή της κάθε μεταβλητής, χρησιμοποιούμε την εντολή <code>print</code>:</p>
+<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">end_message</span><span class="p">)</span>
+</pre></div>
+
+
+<p>[...]</p>
+<h4 id="lists">Λίστες (lists)<a class="headerlink" href="#lists" title="Permanent link">#</a></h4>
+<p>[...]</p>
+<h4 id="tuples">Πλειάδες (tuples)<a class="headerlink" href="#tuples" title="Permanent link">#</a></h4>
+<p>[...]</p>
+<h4 id="dictionaries">Λεξικά (dictionaries)<a class="headerlink" href="#dictionaries" title="Permanent link">#</a></h4>
+<p>[...]</p>
+<h3 id="_3">Σειρά των πράξεων<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p>Η σειρά των πράξεων στην Python γίνεται όπως και στα μαθηματικά. Πρώτα γίνονται οι πολλαπλασιασμοί και οι διαιρέσεις (με τη σειρά που είναι γραμμένες), στη συνέχεια οι προσθέσεις και οι αφαιρέσεις.</p>
+<p>Αν υπάρχουν πράξεις μέσα σε παρενθέσεις, θα γίνουν πρώτα αυτές. Σε περίπτωση που υπάρχουν παρενθέσεις μέσα σε παρενθέσεις, οι πράξεις γίνονται από μέσα προς τα έξω.</p>
+<p>Δοκιμάστε τις παρακάτω πράξεις και δείτε τα αποτελέσματα:</p>
+<div class="code"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">/</span> <span class="mi">10</span>
+<span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">/</span> <span class="mi">10</span>
+<span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span>
+</pre></div>
+
+
+<p>Τα υπόλοιπα τμήματα του προγράμματος (δομές ελέγχου ροής, δομές επανάληψης, συναρτήσεις) θα τα δούμε αναλυτικά σε επόμενα κεφάλαια.</p>
           <aside class="copyright" role="note">
             
               License: <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> &ndash;
