@@ -205,8 +205,32 @@
         <ul>
           
             <li class="anchor">
-              <a title="3.1 Μεταβλητές" href="#31">
-                3.1 Μεταβλητές
+              <a title="3.1 Αριθμητικές Μεταβλητές" href="#31">
+                3.1 Αριθμητικές Μεταβλητές
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="3.2 Κείμενο (strings)" href="#32-strings">
+                3.2 Κείμενο (strings)
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="3.2 Λίστες (lists)" href="#32-lists">
+                3.2 Λίστες (lists)
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="3.3 Πλειάδες (tuples)" href="#33-tuples">
+                3.3 Πλειάδες (tuples)
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="3.4 Λεξικά (dictionaries)" href="#34-dictionaries">
+                3.4 Λεξικά (dictionaries)
               </a>
             </li>
           
@@ -293,8 +317,7 @@
 <div class="admonition node">
 <p class="admonition-title">Σημείωση: Οι βασικές πράξεις στην Python είναι: Πρόσθεση (+), Αφαίρεση (-), Πολλαπλασιασμός (*), Διαίρεση (/)</p>
 </div>
-<h2 id="31">3.1 Μεταβλητές<a class="headerlink" href="#31" title="Permanent link">#</a></h2>
-<h3 id="_1">Απλές μεταβλητές<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
+<h2 id="31">3.1 Αριθμητικές Μεταβλητές<a class="headerlink" href="#31" title="Permanent link">#</a></h2>
 <p>Με τον όρο <em>μεταβλητή</em> εννοούμε μια ποσότητα που δεν έχει απαραίτητα μια σταθερή τιμή. Η τιμή της δηλαδή μπορεί να αλλάζει. </p>
 <p>Φανταστείτε ότι κάπου στη μνήμη του υπολογιστή σας υπάρχουν κάποια συρτάρια με κάποιες ετικέτες πάνω. Για παράδειγμα το συρτάρι <code>a</code>, το συρτάρι <code>b</code> και το συρτάρι <code>sum</code>.
 Το κάθε συρτάρι έχει μέσα του μια τιμή. Μπορεί να είναι ένας ακέραιος αριθμός (1, 2, ...) ή ένας δεκαδικός αριθμός (1.2, 2.34, 3.45, ...) ή ακόμα και ένα κείμενο ("one", "test", ...). Μπορούμε να πάρουμε την τιμή από το συρτάρι ή και να ορίσουμε εμείς μια τιμή σε αυτό. Το συρτάρι αυτό ονομάζεται <strong>μεταβλητή</strong> ενώ το τι περιέχει μέσα είναι η <strong>τιμή της μεταβλητής</strong>.</p>
@@ -336,29 +359,7 @@ y = \frac{a}{100}\cdot x
 <div class="admonition note">
 <p class="admonition-title">Άσκηση: Σε ένα κατάστημα υπάρχουν γιορτινές προσφορές στα ηλεκτρονικά παιχνίδια και όλα τα παιχνίδια είναι 20% φθηνότερα. Γράψτε ένα πρόγραμμα που να βρίσκει την τιμή του κάθε παιχνιδιού μετά την έκπτωση αν ξέρετε πόσο έκανε πριν την έκπτωση.</p>
 </div>
-<h3 id="_2">Άλλοι τύποι μεταβλητών<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
-<p>Εκτός από απλές μεταβλητές με αριθμητικές τιμές, μπορούμε να έχουμε και πιο σύνθετες μορφές. Ας δούμε τους πιο βασικούς τύπους μεταβλητών.</p>
-<h4 id="strings">Κείμενο (strings)<a class="headerlink" href="#strings" title="Permanent link">#</a></h4>
-<p>Σε μια μεταβλητή, εκτός από μια αριθμητική τιμή, μπορούμε να αποθηκεύσουμε και κείμενο. Οι μεταβλητές που περιέχουν κείμενο ονομάζονται strings. Είναι μια ειδική μορφή μεταβλητής γιατί στην πραγματικότητα αποτελούνται αποτελούνται από μια σειρά από χαρακτήρες. </p>
-<p>Για να δημιουργήσουμε τέτοιες μεταβλητές χρησιμοποιούμε τα μονά ή διπλά εισαγωγικά:</p>
-<div class="code"><pre><span></span><span class="n">end_message</span> <span class="o">=</span> <span class="s2">&quot;Game Over&quot;</span>
-<span class="n">start_message</span> <span class="o">=</span> <span class="s2">&quot;Press Start to continue...&quot;</span>
-</pre></div>
-
-
-<p>Για να δούμε την τιμή της κάθε μεταβλητής, χρησιμοποιούμε την εντολή <code>print</code>:</p>
-<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">end_message</span><span class="p">)</span>
-</pre></div>
-
-
-<p>[...]</p>
-<h4 id="lists">Λίστες (lists)<a class="headerlink" href="#lists" title="Permanent link">#</a></h4>
-<p>[...]</p>
-<h4 id="tuples">Πλειάδες (tuples)<a class="headerlink" href="#tuples" title="Permanent link">#</a></h4>
-<p>[...]</p>
-<h4 id="dictionaries">Λεξικά (dictionaries)<a class="headerlink" href="#dictionaries" title="Permanent link">#</a></h4>
-<p>[...]</p>
-<h3 id="_3">Σειρά των πράξεων<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<h3 id="_1">Σειρά των πράξεων<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
 <p>Η σειρά των πράξεων στην Python γίνεται όπως και στα μαθηματικά. Πρώτα γίνονται οι πολλαπλασιασμοί και οι διαιρέσεις (με τη σειρά που είναι γραμμένες), στη συνέχεια οι προσθέσεις και οι αφαιρέσεις.</p>
 <p>Αν υπάρχουν πράξεις μέσα σε παρενθέσεις, θα γίνουν πρώτα αυτές. Σε περίπτωση που υπάρχουν παρενθέσεις μέσα σε παρενθέσεις, οι πράξεις γίνονται από μέσα προς τα έξω.</p>
 <p>Δοκιμάστε τις παρακάτω πράξεις και δείτε τα αποτελέσματα:</p>
@@ -368,6 +369,125 @@ y = \frac{a}{100}\cdot x
 </pre></div>
 
 
+<h3 id="_2">Άλλοι τύποι μεταβλητών<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<p>Εκτός από απλές μεταβλητές με αριθμητικές τιμές, μπορούμε να έχουμε και πιο σύνθετες μορφές. Ας δούμε τους πιο βασικούς τύπους μεταβλητών.</p>
+<h2 id="32-strings">3.2 Κείμενο (strings)<a class="headerlink" href="#32-strings" title="Permanent link">#</a></h2>
+<p>Σε μια μεταβλητή, εκτός από μια αριθμητική τιμή, μπορούμε να αποθηκεύσουμε και κείμενο. Οι μεταβλητές που περιέχουν κείμενο ονομάζονται strings. Είναι μια ειδική μορφή μεταβλητής γιατί στην πραγματικότητα αποτελούνται αποτελούνται από μια σειρά από χαρακτήρες. </p>
+<p>Για να δημιουργήσουμε τέτοιες μεταβλητές χρησιμοποιούμε τα μονά ή διπλά εισαγωγικά:</p>
+<div class="code"><pre><span></span><span class="n">end_message</span> <span class="o">=</span> <span class="s2">&quot;Game Over&quot;</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="s2">&quot;Press Enter to continue...&quot;</span>
+</pre></div>
+
+
+<p>Για να δούμε την τιμή της κάθε μεταβλητής, χρησιμοποιούμε την εντολή <code>print</code>:</p>
+<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">end_message</span><span class="p">)</span>
+</pre></div>
+
+
+<p><strong>Προσοχή</strong></p>
+<ul>
+<li>Όταν ξεκινάτε τον ορισμό ενός κειμένου με μονά ή διπλά εισαγωγικά, θα πρέπει να τελειώνετε με τα ίδια εισαγωγικά. Αν ξεκινάτε με μονά και τελειώνεται με διπλά εισαγωγικά, θα οδηγηθείτε σε σφάλμα.</li>
+<li>Δεν μπορείτε να ξεκινήσετε μια γραμμή με εισαγωγικά και να μην τα κλείσετε.</li>
+<li>Αν θέλετε μέσα στο κείμενό σας να υπάρχει το σύμβολο του εισαγωγικού, θα πρέπει να προηγηθεί μια κάθετος (back slash) "<strong>\</strong>". Για παράδειγμα:</li>
+</ul>
+<div class="code"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;He said, </span><span class="se">\&quot;</span><span class="s2">Here take this gift! It isn</span><span class="se">\&#39;</span><span class="s2">t heavy.</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+
+
+<p>θα μας δώσει σαν αποτέλεσμα:</p>
+<div class="code"><pre><span></span>He said, <span class="s2">&quot;Here take this gift! It isn&#39;t heavy.&quot;</span>
+</pre></div>
+
+
+<p><em>Σημείωση:</em> Η χρήση του backslash (\) για να τυπώσετε τον χαρακτήρα αντί να τον χρησιμοποιήσετε σαν σύμβολο, λέγεται <em>escaping the character</em>.</p>
+<ul>
+<li>Αν ορίσετε το κείμενο με διπλά εισαγωγικά, μπορείτε να χρησιμοποιείτε μέσα στο κείμενο απλά εισαγωγικά χωρίς τη χρήση του backslash, και ανάποδα. Επίσης, μπορείτε να χρησιμοποιήσετε τρεις φορές το μονό εισαγωγικό (''') για να ορίσετε κείμενο.</li>
+</ul>
+<div class="code"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;He said, &quot;Here take this gift! It isn&#39;t heavy.&quot;&#39;&#39;&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>Αν θέλετε να ορίσετε κείμενο με πολλές γραμμές μπορείτε να το κάνετε με την χρήση των τριών αποστρόφων όπως είπαμε παραπάνω.</li>
+</ul>
+<div class="code"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Welcome to my new game.</span>
+<span class="s1">This is my first game! Press Enter to start!</span>
+<span class="s1">Good luck!&#39;&#39;&#39;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+
+
+<h3 id="_3">Εισάγωντας τιμές μεταβλητών σε ένα κείμενο<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p>Έστω ότι έχετε μια μεταβλητή <code>my_score</code> στην οποία κρατάτε τους πόντους σας στο παιχνίδι που φτιάχνετε. Θέλετε στο τέλος κάθε πίστας να ενημερώνετε τον παίκτη με ένα κείμενο, ποιο είναι το σκορ του. Φυσικά, θα μπορούσατε να τυπώσετε ένα μήνυμα και μετά το σκορ. Όμως μπορείτε να συνθέσετε και κείμενο που να περιέχει τιμές μεταβλητών, οπως φαίνεται στο παρακάτω παράδειγμα:</p>
+<div class="code"><pre><span></span><span class="n">my_score</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Congratulations! Stage 1 completed! Your score is </span><span class="si">%s</span><span class="s2"> points!&quot;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">message</span> <span class="o">%</span> <span class="n">my_score</span><span class="p">)</span>  
+</pre></div>
+
+
+<p>Στο παραπάνω παράδειγμα, η παράμετρος <code>%s</code> στο κείμενο, σημαίνει ότι εδώ θα μπει τιμή μιας μεταβλητής. Δοκιμάστε το!</p>
+<p>Αν έχετε παραπάνω από μια μεταβλητή που θέλετε να ενσωματώσετε στο κείμενό σας, τότε πρέπει οι τιμές στο <code>print</code> να μπουν σε παρένθεση.</p>
+<div class="code"><pre><span></span><span class="n">stage</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">my_score</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Congratulations! Stage </span><span class="si">%s</span><span class="s2"> completed! Your score is </span><span class="si">%s</span><span class="s2"> points!&quot;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">message</span> <span class="o">%</span> <span class="p">(</span><span class="n">stage</span><span class="p">,</span> <span class="n">my_score</span><span class="p">))</span>
+</pre></div>
+
+
+<p>Πειραματιστείτε! Γράψτε μερικά κείμενα και τυπώστε τα χρησιμοποιώντας το IDLE.</p>
+<h2 id="32-lists">3.2 Λίστες (lists)<a class="headerlink" href="#32-lists" title="Permanent link">#</a></h2>
+<p>Ας υποθέσουμε ότι θέλουμε να φτιάξουμε ένα πρόγραμμα όπου θα έχει τη λίστα με τα παιχνίδια με τις περισσότερες πωλήσεις. Σύμφωνα με την Wikipedia τα 10 παιχνίδια με τις περισσότερες πωλήσεις είναι:</p>
+<ol>
+<li>Tetris (1984) (495 εκατομμύρια πωλήσεις)</li>
+<li>Minecraft (122 εκατομμύρια πωλήσεις)</li>
+<li>Wii Sports (82.7 εκατομμύρια πωλήσεις)</li>
+<li>Grand Theft Auto V (75 εκατομμύρια πωλήσεις)</li>
+<li>Super Mario Bros (40.24 εκατομμύρια πωλήσεις)</li>
+<li>Mario Kart Wii (36.8 εκατομμύρια πωλήσεις)</li>
+<li>Tetris (1989) (35 εκατομμύρια πωλήσεις)</li>
+<li>Wii Sports Resor (32.8 εκατομμύρια πωλήσεις)</li>
+<li>New Super Mario Bros (30.79 εκατομμύρια πωλήσεις)</li>
+<li>The Elder Scrolls V: Skyrim (30 εκατομμύρια πωλήσεις)</li>
+</ol>
+<p>Φυσικά, μπορούμε να γράψουμε τη λίστα αυτή σε μορφή κειμένου και να την τυπώσουμε, όπως παρακάτω:</p>
+<div class="code"><pre><span></span><span class="n">top_games</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Tetris (1984), </span>
+<span class="s1">Minecraft, </span>
+<span class="s1">Wii Sports, </span>
+<span class="s1">Grand Theft Auto V, </span>
+<span class="s1">Super Mario Bros, </span>
+<span class="s1">Mario Kart Wii, </span>
+<span class="s1">Tetris (1989), </span>
+<span class="s1">Wii Sports Resor, </span>
+<span class="s1">New Super Mario Bros, </span>
+<span class="s1">The Elder Scrolls V: Skyrim&#39;&#39;&#39;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Top 10 Games: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">top_games</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Όμως αυτή η λίστα δεν είναι εύκολα επεξεργάσιμη. Και αν θέλαμε να δούμε το παιχνίδι που βρίσκεται στην τρίτη θέση, θα έπρεπε να τα δούμε όλα και να μετρήσουμε μόνοι μας ποιο βρίσκεται στην θέση που ψάχνουμε. Γι' αυτό η Python μας δίνει τη δυνατότητα να δημιουργούμε λίστες με αντικείμενα, τις οποίες μπορούμε πιο εύκολα να χειριστούμε. </p>
+<p>Στην Python οι λίστες ορίζονται με αγκύλες <strong>[]</strong>.</p>
+<p>Οπότε θα μπορούσαμε αντίστοιχα να κάνουμε:</p>
+<div class="code"><pre><span></span><span class="n">top_games</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;Tetris (1984)&quot;</span><span class="p">,</span> <span class="s2">&quot;Minecraft&quot;</span><span class="p">,</span> <span class="s2">&quot;Wii Sports&quot;</span><span class="p">,</span> 
+<span class="s2">&quot;Grand Theft Auto V&quot;</span><span class="p">,</span> <span class="s2">&quot;Super Mario Bros&quot;</span><span class="p">,</span> <span class="s2">&quot;Mario Kart Wii&quot;</span><span class="p">,</span> 
+<span class="s2">&quot;Tetris (1989)&quot;</span><span class="p">,</span> <span class="s2">&quot;Wii Sports Resor&quot;</span><span class="p">,</span> <span class="s2">&quot;New Super Mario Bros&quot;</span><span class="p">,</span> 
+<span class="s2">&quot;The Elder Scrolls V: Skyrim&quot;</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">top_games</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+
+<p><strong>Σημαντικό:</strong> Στην Python (όπως και στις περισσότερες γλώσσες προγραμματισμού) το μέτρημα ξεκινάει από το μηδέν (0). Που σημαίνει, αν θέλουμε να πάρουμε το πρώτο στοιχείο της λίστας μας, θα πούμε <code>top_games[0]</code>.</p>
+<p>[...]</p>
+<h2 id="33-tuples">3.3 Πλειάδες (tuples)<a class="headerlink" href="#33-tuples" title="Permanent link">#</a></h2>
+<p>[...]</p>
+<h2 id="34-dictionaries">3.4 Λεξικά (dictionaries)<a class="headerlink" href="#34-dictionaries" title="Permanent link">#</a></h2>
+<p>[...]</p>
 <p>Τα υπόλοιπα τμήματα του προγράμματος (δομές ελέγχου ροής, δομές επανάληψης, συναρτήσεις) θα τα δούμε αναλυτικά σε επόμενα κεφάλαια.</p>
           <aside class="copyright" role="note">
             
