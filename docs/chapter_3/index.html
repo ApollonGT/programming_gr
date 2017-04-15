@@ -234,6 +234,12 @@
               </a>
             </li>
           
+            <li class="anchor">
+              <a title="Ασκήσεις" href="#_7">
+                Ασκήσεις
+              </a>
+            </li>
+          
         </ul>
       
     
@@ -483,12 +489,137 @@ y = \frac{a}{100}\cdot x
 
 
 <p><strong>Σημαντικό:</strong> Στην Python (όπως και στις περισσότερες γλώσσες προγραμματισμού) το μέτρημα ξεκινάει από το μηδέν (0). Που σημαίνει, αν θέλουμε να πάρουμε το πρώτο στοιχείο της λίστας μας, θα πούμε <code>top_games[0]</code>.</p>
-<p>[...]</p>
+<p>Μπορούμε φυσικά να τυπώσουμε και ολόκληρη τη λίστα: </p>
+<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">top_games</span><span class="p">)</span>
+
+<span class="p">[</span><span class="s1">&#39;Tetris (1984)&#39;</span><span class="p">,</span> <span class="s1">&#39;Minecraft&#39;</span><span class="p">,</span> <span class="s1">&#39;Wii Sports&#39;</span><span class="p">,</span> <span class="s1">&#39;Grand Theft Auto V&#39;</span><span class="p">,</span> 
+<span class="s1">&#39;Super Mario Bros&#39;</span><span class="p">,</span> <span class="s1">&#39;Mario Kart Wii&#39;</span><span class="p">,</span> <span class="s1">&#39;Tetris (1989)&#39;</span><span class="p">,</span> 
+<span class="s1">&#39;Wii Sports Resor&#39;</span><span class="p">,</span> <span class="s1">&#39;New Super Mario Bros&#39;</span><span class="p">,</span> <span class="s1">&#39;The Elder Scrolls V: Skyrim&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Μια λίστα μπορεί να περιέχει και αριθμούς και κείμενο, ακόμα και ανάμεικτα. Επίσης, μια λίστα μπορεί να αποτελείται από άλλες λίστες.</p>
+<p>Ας πούμε ότι έχουμε λίστα με δυο αντικείμενα, το όνομα και το επίθετο ενός επιστήμονα. Αν θέλουμε να έχουμε μια λίστα με επιστήμονες θα λέγαμε:</p>
+<div class="code"><pre><span></span><span class="n">scientists</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">[</span><span class="s1">&#39;Albert&#39;</span><span class="p">,</span> <span class="s1">&#39;Einstein&#39;</span><span class="p">],</span>
+<span class="p">[</span><span class="s1">&#39;Isaac&#39;</span><span class="p">,</span> <span class="s1">&#39;Newton&#39;</span><span class="p">],</span>
+<span class="p">[</span><span class="s1">&#39;Stephen&#39;</span><span class="p">,</span> <span class="s1">&#39;Hawking&#39;</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<h3 id="_4">Προσθέτοντας / αλλάζοντας αντικείμενα σε μια λίστα<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
+<p>Ένα πλεονέκτημα στην χρήση λιστών είναι ότι μπορούμε να προσθέσουμε, να αφαιρέσουμε και να τροποποιήσουμε τις τιμές σε μια λίστα. Για να προσθέσουμε αντικείμενα σε μια λίστα καλούμε την <em>μέθοδο</em> <code>.append()</code>, όπως στο ακόλουθο παράδειγμα:</p>
+<div class="code"><pre><span></span><span class="n">top_games</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Diablo II&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Έτσι, στη λίστα μας προστέθηκε ακόμα ένα παιχνίδι. Όμως, αυτό που προσθέσαμε είναι λάθος. Γιατί στην πραγματικότητα την 11η θέση στη λίστα μας κατέχει το Diablo III με 30 εκατομμύρια πωλήσεις. Για να το διορθώσουμε αυτό, αλλάζουμε το ενδέκατο στοιχείο (δηλαδή αυτό που βρίσκεται στη θέση 10 - καθώς η μέτρηση ξεκινάει από το 0):</p>
+<div class="code"><pre><span></span><span class="n">top_games</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Diablo III&#39;</span>
+</pre></div>
+
+
+<p>Έτσι, μάθαμε πως προσθέτουμε στο τέλος ή αλλάζουμε τις τιμές μιας λίστας.</p>
+<p><em>Σημείωση:</em> Το <code>.append</code> προσθέτει νέο αντικείμενο στο τέλος της λίστας. Αν θέλουμε να προσθέσουμε ένα αντικείμενο σε μια συγκεκριμένη θέση, χρησιμοποιούμε το <code>.insert(index, value)</code>. Αυτό θα έχει σαν αποτέλεσμα, η νέα μας τιμή να μπει στη θέση <em>index</em> και όλα τα επόμενα αντικείμενα να μετακινηθούν μια θέση μετά. Παράδειγμα:</p>
+<div class="code"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+
+<span class="c1">#print(numbrs)</span>
+<span class="c1">#[1, 2, 2.5, 3, 4]</span>
+</pre></div>
+
+
+<h3 id="_5">Διαγραφή στοιχείο από τη λίστα<a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<p>Για την διαγραφή ενός αντικειμένου από συγκεκριμένη θέση μιας λίστας, χρησιμοποιούμε την εντολή <code>del</code>.</p>
+<div class="code"><pre><span></span><span class="k">del</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Αυτό θα διαγράψει το στοιχείο που βρίσκεται στη θέση 2 της λίστας, δηλαδή τον αριθμό 2.5 που εισάγαμε παραπάνω.</p>
+<h3 id="_6">Πράξεις με λίστες<a class="headerlink" href="#_6" title="Permanent link">#</a></h3>
+<p>Υπάρχει η δυνατότητα να κάνουμε κάποιες πράξεις με τις λίστες. Αν έχουμε για παράδειγμα δυο λίστες, μπορούμε να τις προσθέσουμε και να πάρουμε μια νέα λίστα που να περιέχει τα αντικείμενα των δυο λιστών:</p>
+<div class="code"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span><span class="p">)</span>
+
+<span class="c1"># [1, 2, 3, 4, 5, 6]</span>
+</pre></div>
+
+
+<p><strong>Προσοχή:</strong> Η πρόσθεση μπορεί να γίνει μόνο μεταξύ λιστών και όχι λίστας με απλό αριθμό. Δηλαδή αυτό <code>list1 + 5</code> θα ήταν λάθος.</p>
+<p>Επίσης, μπορούμε να πολλαπλασιάσουμε μια λίστα με έναν αριθμό. Αυτό θα είχε ως αποτέλεσμα μια νέα λίστα με τα στοιχεία της αρχικής λίστας να επαναλαμβάνονται:</p>
+<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">list1</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># [1, 2, 3, 1, 2, 3]</span>
+</pre></div>
+
+
+<p><strong>Προσοχή:</strong> Ο πολλαπλασιασμός γίνεται μόνο μεταξύ λίστας και αριθμού και όχι μεταξύ λιστών.</p>
+<p>Να θυμάστε ότι δεν μπορείτε να κάνετε αφαίρεση ή διαίρεση με λίστες.</p>
 <h2 id="33-tuples">3.3 Πλειάδες (tuples)<a class="headerlink" href="#33-tuples" title="Permanent link">#</a></h2>
-<p>[...]</p>
+<p>Ένα <em>tuple</em> είναι ακριβώς ό,τι και η λίστα με κάποιες διαφορές:</p>
+<ol>
+<li>
+<p>Τα <em>tuples</em> ορίζονται με παρένθεση αντί για αγκύλη <code>tuple1 = (1, 2, 3)</code>.</p>
+</li>
+<li>
+<p>Τα <em>tuples</em> δεν αλλάζουν. Ορίζονται μια φορά και δεν μπορεί κάποιος να προσθέσει, αφαιρέσει ή να τροποποιήσει τα περιεχόμενά του.</p>
+</li>
+</ol>
+<p>Ακριβώς επειδή δεν μπορούν να τροποποιηθούν, τα <em>tuples</em> είναι σημαντικά, γιατί ο χρήστης είναι σίγουρος ότι το αποτέλεσμα που του έδωσε το πρόγραμμά του δεν έχει αλλάξει από κανέναν.</p>
 <h2 id="34-dictionaries">3.4 Λεξικά (dictionaries)<a class="headerlink" href="#34-dictionaries" title="Permanent link">#</a></h2>
-<p>[...]</p>
+<p>Το λεξικό, γνωστό και ως <em>dict</em>, <em>dictionary</em> ή <em>map</em> είναι επίσης μια συλλογή από αντικείμενα, όπως οι λίστες και οι πλειάδες. Η διαφορά στο λεξικό είναι ότι τα αντικείμενα είναι ζευγάρια <em>κλειδιού</em> =&gt; <em>τιμής</em> (<em>key</em> =&gt; <em>value</em>). Για να ορίσουμε ένα λεξικό, χρησιμοποιούμε τα άγκιστρα (γνωστά και ως μύστακες) <strong>{}</strong> και διαχωρίζουμε το κλειδί από την τιμή με άνω-κάτω τελεία <strong>:</strong>. Ας δούμε λίγο το παράδειγμα με τα παιχνίδια και τις πωλήσεις τους:</p>
+<div class="code"><pre><span></span><span class="n">top_games</span> <span class="o">=</span> <span class="p">{</span>
+<span class="s1">&#39;Tetris (1984)&#39;</span> <span class="p">:</span> <span class="mf">495.0</span><span class="p">,</span>
+<span class="s1">&#39;Minecraft&#39;</span> <span class="p">:</span> <span class="mf">122.0</span><span class="p">,</span>
+<span class="s1">&#39;Wii Sports&#39;</span> <span class="p">:</span> <span class="mf">82.7</span><span class="p">,</span>
+<span class="s1">&#39;Grand Theft Auto V&#39;</span> <span class="p">:</span> <span class="mf">75.0</span><span class="p">,</span>
+<span class="s1">&#39;Super Mario Bros&#39;</span> <span class="p">:</span> <span class="mf">40.24</span><span class="p">,</span>
+<span class="s1">&#39;Mario Kart Wii&#39;</span> <span class="p">:</span> <span class="mf">36.8</span><span class="p">,</span>
+<span class="s1">&#39;Tetris (1989)&#39;</span> <span class="p">:</span> <span class="mf">35.0</span><span class="p">,</span>
+<span class="s1">&#39;Wii Sports Resor&#39;</span> <span class="p">:</span> <span class="mf">32.8</span><span class="p">,</span>
+<span class="s1">&#39;New Super Mario Bros&#39;</span> <span class="p">:</span> <span class="mf">30.79</span><span class="p">,</span>
+<span class="s1">&#39;The Elder Scrolls V: Skyrim&#39;</span><span class="p">:</span> <span class="mf">30.0</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Έτσι έχουμε σε ένα λεξικό την αντιστοίχηση του τίτλου του παιχνιδιού με τον αριθμό των πωλήσεων (σε εκατομμύρια).</p>
+<p><strong>Προσοχή:</strong> Όπως στις λίστες και τις πλειάδες είχαμε έναν αριθμό που έδειχνε τη θέση (index) της κάθε τιμής, εδώ έχουμε το κλειδί της κάθε τιμής. Οπότε αν θέλουμε να δούμε τον αριθμό των πωλήσεων πχ για το <em>Minecraft</em> αρκεί να πούμε:</p>
+<div class="code"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">top_games</span><span class="p">[</span><span class="s1">&#39;Minecraft&#39;</span><span class="p">])</span>
+
+<span class="c1"># 122.0</span>
+</pre></div>
+
+
+<p>Αν θέλουμε να προσθέσουμε μια νέα τιμή αρκεί απλά να την ορίσουμε:</p>
+<div class="code"><pre><span></span><span class="n">top_games</span><span class="p">[</span><span class="s1">&#39;Diablo III&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">30.0</span>
+</pre></div>
+
+
+<p>Αν θέλουμε να αλλάξουμε την τιμή για ένα κλειδί κάνουμε το ίδιο με παραπάνω. Απλά ορίζουμε τη νέα τιμή.</p>
+<p>Αν θέλουμε να διαγράψουμε ένα αντικείμενο (ζευγάρι κλειδιού - τιμής) από το λεξικό, χρησιμοποιούμε την εντολή <code>del</code>:</p>
+<div class="code"><pre><span></span><span class="k">del</span> <span class="n">top_games</span><span class="p">[</span><span class="s1">&#39;Minecraft&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Δοκιμάστε όλα τα παραπάνω και εξασκηθείτε στην python. Να θυμάστε ότι όσο παίζετε με τα παραδείγματα, τόσο καλύτερα θα τα καταλάβετε.</p>
 <p>Τα υπόλοιπα τμήματα του προγράμματος (δομές ελέγχου ροής, δομές επανάληψης, συναρτήσεις) θα τα δούμε αναλυτικά σε επόμενα κεφάλαια.</p>
+<h2 id="_7">Ασκήσεις<a class="headerlink" href="#_7" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p>Δώστε σε μια μεταβλητή το όνομά σας και σε μια δεύτερη μεταβλητή το επίθετό σας. Δημιουργείστε ένα κείμενο (string) που να λέει "Hello, <onoma> <epitheto>" και να περιέχει τις τιμές των μεταβλητών που ορίσατε. Τυπώστε το κείμενο αυτό. </p>
+</li>
+<li>
+<p>Φτιάξτε μια λίστα με τα αγαπημένα σας χόμπι. Φτιάξτε μια δεύτερη λίστα με τα αγαπημένα σας φαγητά. Φτιάξτε μια τρίτη λίστα που θα είναι τα αγαπημένα σας χόμπι και φαγητά μαζί. Τυπώστε την τελευταία λίστα.</p>
+</li>
+<li>
+<p>Φτιάξτε ένα λεξικό (dictionary) που να περιέχει τους 5 αγαπημένους σας ποδοσφαιριστές και τον αντίστοιχο αριθμό γκολ που βάλανε σε ένα πρωτάθλημα.<br>
+Για όσους δεν ασχολούνται με ποδόσφαιρο, βρείτε μια συνταγή και δημιουργείστε ένα λεξικό με τα συστατικά τους και τα γραμμάρια που απαιτούνται για το καθένα.<br>
+Τυπώστε το λεξικό που δημιουργήσατε.</p>
+</li>
+</ol>
           <aside class="copyright" role="note">
             
               License: <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> &ndash;
